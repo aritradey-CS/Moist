@@ -37,8 +37,8 @@ function loco() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 }
-loco();
 
+loco();
 var clutter = "";
 document
   .querySelector("#page2>h2")
@@ -342,7 +342,7 @@ gsap.to("#page4>h3>span", {
   stagger: 0.1,
   color: `white`,
 });
-
+ 
 function canvas1() {
   const canvas = document.querySelector("#page5>canvas");
   const context = canvas.getContext("2d");
@@ -726,24 +726,23 @@ function canvas1() {
 }
 canvas1();
 
-
 var clutter = "";
 document
-  .querySelector("#page6>h3>span")
+  .querySelector("#page6>h3")
   .textContent.split(" ")
   .forEach(function (dets) {
     clutter += `<span> ${dets} </span>`;
-    document.querySelector("#page4>h3").innerHTML = clutter;
+    document.querySelector("#page6>h3").innerHTML = clutter;
   });
 
 gsap.to("#page6>h3>span", {
   ScrollTrigger: {
-    trigger: `#page6>h3>span`,
+    trigger: `#page6>h3`,
     start: `top bottom`,
     end: `bottom top`,
     scroller: `#main`,
-    scrub: 0.5,
+    scrub: 0.4,
   },
-  stagger: 0.1,
+  stagger: 0.2,
   color: `white`,
 });
