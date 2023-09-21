@@ -202,7 +202,7 @@ function canvas() {
     return data.split("\n")[index];
   }
 
-  const frameCount = 121;
+  const frameCount = 101;
 
   const images = [];
   const imageSeq = {
@@ -662,7 +662,7 @@ function canvas1() {
     return data.split("\n")[index];
   }
 
-  const frameCount = 261;
+  const frameCount = 101;
 
   const images = [];
   const imageSeq = {
@@ -725,3 +725,25 @@ function canvas1() {
   });
 }
 canvas1();
+
+
+var clutter = "";
+document
+  .querySelector("#page6>h3>span")
+  .textContent.split(" ")
+  .forEach(function (dets) {
+    clutter += `<span> ${dets} </span>`;
+    document.querySelector("#page4>h3").innerHTML = clutter;
+  });
+
+gsap.to("#page6>h3>span", {
+  ScrollTrigger: {
+    trigger: `#page6>h3>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.5,
+  },
+  stagger: 0.1,
+  color: `white`,
+});
