@@ -382,6 +382,7 @@ nav > img {
   object-fit: cover;
 }
 
+
 .page8-bottom {
   position: absolute;
   bottom: 5%;
@@ -526,7 +527,7 @@ nav > img {
   .left9 > h1 {
     position: absolute;
     top: 35%;
-    right: 5%;
+    right: 25%;
     transform: translateY(-50%);
     font-size: 5vw;
     font-weight: 400;
@@ -534,9 +535,10 @@ nav > img {
     line-height: 1;
   }
   
-  .right9-center {
+ 
+.right9-center {
     height: 45%;
-    width: 85%;
+    width: 105%;
     background-color: #33ff00;
     border-radius: 10px;
     position: absolute;
@@ -544,14 +546,15 @@ nav > img {
     transform: translateY(-50%);
     background-image: url(https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: cover;
-    left: 5%;
-  }  
+    left: -20%;
+}
+  
 
   @media screen and (max-width:768px) {
     .left9 > h1 {
       position: absolute;
       top: 30%;
-      left: 8%;
+      left: 25%;
       transform: translateY(-50%);
       font-size: 5vw;
       font-weight: 400;
@@ -614,10 +617,11 @@ nav > img {
     left: 5%;
   }
   .right10-inner > h1 {
-    font-size: 5vw; /* Adjusted font size for small screens */
+    font-size: 3vw; /* Adjusted font size for small screens */
     
   }
   .right10-inner > p {
+    margin: 2vh 0vh;
     font-size: 3vw; /* Adjusted font size for small screens */
   }
 }
