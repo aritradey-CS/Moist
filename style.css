@@ -51,6 +51,7 @@ nav > img {
 
 #right-nav > button {
   margin-top: 3vh;
+  
   padding: 10px 20px;
   border-radius: 50px;
   background-color: rgb(226, 220, 218);
@@ -62,7 +63,7 @@ nav > img {
 
 .bottom-page1 {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   left: 8%;
   display: flexbox;
   height: 25vh;
@@ -86,6 +87,7 @@ nav > img {
   /* padding:-20px; */
   margin-top: -4.5%;
   margin-right: -125%;
+  color: rgb(255, 0, 0);
   height: 10%;
   width: 100%;
   font-family: "Ubantu";
