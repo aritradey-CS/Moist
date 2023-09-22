@@ -59,3 +59,31 @@ nav > img {
   font-family: "Ubuntu";
   font-weight: 700;
 }
+
+.bottom-page1 {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+
+.bottom-page1 > h1 {
+  display: flex;
+  font-family: 'Amita';
+  font-weight: 100;
+  line-height: 1;
+}
+
+.first-line {
+  font-size: 5vw;
+  margin-right: 5%; 
+}
+
+.second-line {
+  
+  font-size: 3vw; 
+  /* margin-right: 2%;  */
+}
+
+.third-line {
+  /* font-size: 5vw; Adjust the font size for the third line */
+}
