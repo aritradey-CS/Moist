@@ -194,12 +194,12 @@ function canvas() {
     ./assetes/page3-background-photos/0119.jpg
     ./assetes/page3-background-photos/0120.jpg
     ./assetes/page3-background-photos/0121.jpg
-      
+    
    `;
     return data.split("\n")[index];
   }
   
-  const frameCount = 300;
+  const frameCount = 121;
   
   const images = [];
   const imageSeq = {
