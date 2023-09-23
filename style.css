@@ -68,8 +68,8 @@ nav > img {
   background-color: rgb(226, 220, 218);
   color: rgb(0, 0, 0);
   border: solid black;
-  font-family: 'Raleway' ;
-  font-weight:900;
+  font-family: "Raleway";
+  font-weight: 900;
 }
 
 .bottom-page1 {
@@ -117,7 +117,7 @@ nav > img {
   background-color: aliceblue;
   color: black;
   font-size: 20px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 @media screen and (max-width: 768px) {
@@ -148,7 +148,7 @@ nav > img {
     background-color: aliceblue;
     color: black;
     font-size: 16px;
-    font-family: 'Raleway' ;
+    font-family: "Raleway";
   }
 }
 
@@ -157,14 +157,14 @@ nav > img {
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Raleway' ;
+  font-family: "Raleway";
   height: 100vh;
   width: 100%;
   background-color: red;
   position: relative;
   color: azure;
   padding: 0 4%;
-  background-color: rgb(37,0,72);
+  background-color: rgb(37, 0, 72);
 }
 
 #page > h1 {
@@ -179,15 +179,22 @@ nav > img {
   color: rgba(240, 255, 255, 0.349);
 }
 
-#page3{
+#page3 {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-color: blueviolet;
 }
 
-#page3>canvas{
+#page3 > canvas {
   position: relative;
   height: 100vh;
   width: 100vw;
+}
+
+#page4{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: brown;
 }
