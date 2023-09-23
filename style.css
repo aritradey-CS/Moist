@@ -13,6 +13,7 @@ body {
 #main {
   position: relative;
   overflow: hidden;
+  background-color: #131222;
 }
 
 #page1 {
@@ -196,5 +197,5 @@ nav > img {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-color: brown;
+  background-color: #131222;
 }
