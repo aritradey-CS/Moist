@@ -32,3 +32,23 @@ ScrollTrigger.refresh();
 
 }
 loco()
+
+var clutter = "";
+document.querySelector("#page2>h2").textContent.split(" ").forEach(function(dets){
+  clutter += `<span> ${dets} </span>`
+  document.querySelector("#page2>h2").innerHTML = clutter;
+})
+
+
+gsap.to("#page2>h2>span",{
+  ScrollTrigger:{
+    trigger: `#page2>h2.span`,
+    start:`top bottom`,
+    end:`bottom top`,
+    scroller:`#main`,
+    scrub:.3,
+    markers:true,
+  },
+  stagger:.1,
+  color:`white`
+})
