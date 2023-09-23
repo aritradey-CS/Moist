@@ -327,3 +327,25 @@ function canvas() {
   });
 }
 canvas();
+
+
+var clutter = "";
+document
+  .querySelector("#page4>h3")
+  .textContent.split(" ")
+  .forEach(function (dets) {
+    clutter += `<span> ${dets} </span>`;
+    document.querySelector("#page4>h3").innerHTML = clutter;
+  });
+
+  gsap.to("#page4>h3>span", {
+    ScrollTrigger: {
+      trigger: `#page4>h3>span`,
+      start: `top bottom`,
+      end: `bottom top`,
+      scroller: `#main`,
+      scrub: .5,
+    },
+    stagger: .1,
+    color: `white`,
+  });

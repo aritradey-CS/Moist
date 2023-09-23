@@ -210,7 +210,7 @@ nav > img {
   margin-left: 15vw;
   margin-bottom: 2vw;
   font-weight: 100;
-  color: azure;
+  color: rgb(240, 255, 255);
 }
 
 #page4>h3{
@@ -219,6 +219,5 @@ width: 75%;
 font-size: 3vw;
 font-weight: 100;
 margin-bottom: 2vw;
-
-color: azure;
+color:rgba(240, 255, 255, 0.5);
 }
