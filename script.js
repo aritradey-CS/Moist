@@ -262,6 +262,7 @@ function canvas() {
     end: "250% top",
     scroller: "#main",
   });
+  canvas()
 
 //   gsap.to(imageSeq, {
 //     frame: frameCount - 1,
@@ -316,7 +317,6 @@ function canvas() {
 //   });
 // }
 
-canvas()
 
 
 
