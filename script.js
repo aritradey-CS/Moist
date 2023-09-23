@@ -215,84 +215,21 @@ function canvas() {
     images.push(img);
   }
   // Function to update the animation frame
-  function updateFrame() {
-    imageSeq.frame++;
-    if (imageSeq.frame >= frameCount) {
-      imageSeq.frame = 0; // Reset to the first frame to create a loop
-    }
-    render();
-  }
+//   function updateFrame() {
+//     imageSeq.frame++;
+//     if (imageSeq.frame >= frameCount) {
+//       imageSeq.frame = 0; // Reset to the first frame to create a loop
+//     }
+//     render();
+//   }
 
-  // Set an interval to update the frame every 100 milliseconds
-  const animationInterval = setInterval(updateFrame, 100);
-
-  images[1].onload = render;
-
-  function render() {
-    context.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-    scaleImage(images[imageSeq.frame], context);
-  }
-
-  function scaleImage(img, ctx) {
-    var canvas = ctx.canvas;
-    var hRatio = canvas.width / img.width;
-    var vRatio = canvas.height / img.height;
-    var ratio = Math.max(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / 2;
-    var centerShift_y = (canvas.height - img.height * ratio) / 2;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(
-      img,
-      0,
-      0,
-      img.width,
-      img.height,
-      centerShift_x,
-      centerShift_y,
-      img.width * ratio,
-      img.height * ratio
-    );
-  }
-  // ... (your image scaling logic)
-}
-
-// Scroll-triggered pinning
-ScrollTrigger.create({
-  trigger: "#page3",
-  pin: true,
-  start: "top top",
-  end: "250% top",
-  scroller: "#main",
-});
-canvas();
-
-
-
-
-
-
-// ----------------------------------------------------------------------------------------------
-                                    // Used for different approch
-// ----------------------------------------------------------------------------------------------
-
-//   gsap.to(imageSeq, {
-//     frame: frameCount - 1,
-//     snap: "frame",
-//     ease: `none`,
-//     scrollTrigger: {
-//       scrub: .5,
-//       trigger: `#page3>canvas`,
-//       //   set start end according to preference
-//       start: `top top`,
-//       end: `250% top`,
-//       scroller: `#main`,
-//     },
-//     onUpdate: render,
-//   });
+//   // Set an interval to update the frame every 100 milliseconds
+//   const animationInterval = setInterval(updateFrame, 100);
 
 //   images[1].onload = render;
 
 //   function render() {
+//     context.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
 //     scaleImage(images[imageSeq.frame], context);
 //   }
 
@@ -316,14 +253,77 @@ canvas();
 //       img.height * ratio
 //     );
 //   }
-//   ScrollTrigger.create({
-
-//     trigger: "#page3" ,
-//     pin: true,
-//     // markers:true,
-//     scroller: `#main`,
-//   //   set start end according to preference
-//     start: `top top`,
-//     end: `250% top`,
-//   });
+//   // ... (your image scaling logic)
 // }
+
+// // Scroll-triggered pinning
+// ScrollTrigger.create({
+//   trigger: "#page3",
+//   pin: true,
+//   start: "top top",
+//   end: "250% top",
+//   scroller: "#main",
+// });
+
+
+
+
+
+
+// ----------------------------------------------------------------------------------------------
+// Used for different approch
+// ----------------------------------------------------------------------------------------------
+
+  gsap.to(imageSeq, {
+      frame: frameCount - 1,
+    snap: "frame",
+    ease: `none`,
+    scrollTrigger: {
+        scrub: .5,
+        trigger: `#page3>canvas`,
+        //   set start end according to preference
+        start: `top top`,
+        end: `250% top`,
+        scroller: `#main`,
+      },
+      onUpdate: render,
+    });
+  
+    images[1].onload = render;
+  
+  function render() {
+      scaleImage(images[imageSeq.frame], context);
+    }
+  
+    function scaleImage(img, ctx) {
+        var canvas = ctx.canvas;
+    var hRatio = canvas.width / img.width;
+    var vRatio = canvas.height / img.height;
+    var ratio = Math.max(hRatio, vRatio);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+      img,
+      0,
+      0,
+      img.width,
+      img.height,
+      centerShift_x,
+      centerShift_y,
+      img.width * ratio,
+      img.height * ratio
+    );
+  }
+  ScrollTrigger.create({
+  
+      trigger: "#page3" ,
+      pin: true,
+    // markers:true,
+    scroller: `#main`,
+  //   set start end according to preference
+    start: `top top`,
+    end: `200% top`,
+  });
+}
+canvas();
