@@ -194,8 +194,31 @@ nav > img {
 }
 
 #page4{
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  display: flex;
   height: 100vh;
   width: 100vw;
-  position: relative;
+  font-family: "Raleway";
   background-color: #131222;
+
+}
+
+#page4>h1 {
+  margin-left: 15vw;
+  margin-bottom: 2vw;
+  font-weight: 100;
+  color: azure;
+}
+
+#page4>h3{
+  margin-left: 15vw;
+width: 75%;
+font-size: 3vw;
+font-weight: 100;
+margin-bottom: 2vw;
+
+color: azure;
 }
