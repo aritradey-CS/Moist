@@ -178,3 +178,16 @@ nav > img {
   margin: 2%;
   color: rgba(240, 255, 255, 0.349);
 }
+
+#page3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: blueviolet;
+}
+
+#page3>canvas{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
