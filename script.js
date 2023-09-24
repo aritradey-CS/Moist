@@ -50,7 +50,7 @@ document
 
 gsap.to("#page2>h2>span", {
   ScrollTrigger: {
-    trigger: `#page2>h2.span`,
+    trigger: `#page2>h2`,
     start: `top bottom`,
     end: `bottom top`,
     scroller: `#main`,
@@ -215,13 +215,13 @@ function canvas() {
     images.push(img);
   }
   // Function to update the animation frame
-//   function updateFrame() {
-//     imageSeq.frame++;
-//     if (imageSeq.frame >= frameCount) {
-//       imageSeq.frame = 0; // Reset to the first frame to create a loop
-//     }
-//     render();
-//   }
+  function updateFrame() {
+    imageSeq.frame++;
+    if (imageSeq.frame >= frameCount) {
+      imageSeq.frame = 0; // Reset to the first frame to create a loop
+    }
+    render();
+  }
 
 //   // Set an interval to update the frame every 100 milliseconds
 //   const animationInterval = setInterval(updateFrame, 100);
@@ -256,7 +256,7 @@ function canvas() {
 //   // ... (your image scaling logic)
 // }
 
-// // Scroll-triggered pinning
+// Scroll-triggered pinning
 // ScrollTrigger.create({
 //   trigger: "#page3",
 //   pin: true,
@@ -340,7 +340,7 @@ document
 
   gsap.to("#page4>h3>span", {
     ScrollTrigger: {
-      trigger: `#page4>h3>span`,
+      trigger: `#page4>h3`,
       start: `top bottom`,
       end: `bottom top`,
       scroller: `#main`,
