@@ -71,6 +71,7 @@ nav > img {
   border: solid black;
   font-family: "Raleway";
   font-weight: 900;
+  cursor: pointer;
 }
 
 .bottom-page1 {
@@ -119,6 +120,7 @@ nav > img {
   color: black;
   font-size: 20px;
   font-family: "Raleway";
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -150,6 +152,7 @@ nav > img {
     color: black;
     font-size: 16px;
     font-family: "Raleway";
+    cursor: pointer;
   }
 }
 
@@ -192,6 +195,23 @@ nav > img {
   height: 100vh;
   width: 100vw;
 }
+#exploreButton {
+  position: absolute;
+  bottom: 20px; /* Adjust this value to position the arrow and text vertically */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #fff; /* Text color */
+  text-align: center;
+  z-index: 2; /* Ensure it's above the canvas */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+#exploreButton:hover {
+  color: #33ff00; /* Change the text color on hover */
+}
+
 
 #page4{
   justify-content: center;
