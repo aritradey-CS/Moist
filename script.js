@@ -373,111 +373,311 @@ document
   
     function files(index) {
       var data = `
-      ./assetes/page5-background-photos/photo_01.jpg
-      ./assetes/page5-background-photos/photo_02.jpg
-      ./assetes/page5-background-photos/photo_03.jpg
-      ./assetes/page5-background-photos/photo_04.jpg
-      ./assetes/page5-background-photos/photo_05.jpg
-      ./assetes/page5-background-photos/photo_06.jpg
-      ./assetes/page5-background-photos/photo_07.jpg
-      ./assetes/page5-background-photos/photo_08.jpg
-      ./assetes/page5-background-photos/photo_09.jpg
-      ./assetes/page5-background-photos/photo_010.jpg
-      ./assetes/page5-background-photos/photo_011.jpg
-      ./assetes/page5-background-photos/photo_012.jpg
-      ./assetes/page5-background-photos/photo_013.jpg
-      ./assetes/page5-background-photos/photo_014.jpg
-      ./assetes/page5-background-photos/photo_015.jpg
-      ./assetes/page5-background-photos/photo_016.jpg
-      ./assetes/page5-background-photos/photo_017.jpg
-      ./assetes/page5-background-photos/photo_018.jpg
-      ./assetes/page5-background-photos/photo_019.jpg
-      ./assetes/page5-background-photos/photo_020.jpg
-      ./assetes/page5-background-photos/photo_021.jpg
-      ./assetes/page5-background-photos/photo_022.jpg
-      ./assetes/page5-background-photos/photo_023.jpg
-      ./assetes/page5-background-photos/photo_024.jpg
-      ./assetes/page5-background-photos/photo_025.jpg
-      ./assetes/page5-background-photos/photo_026.jpg
-      ./assetes/page5-background-photos/photo_027.jpg
-      ./assetes/page5-background-photos/photo_028.jpg
-      ./assetes/page5-background-photos/photo_029.jpg
-      ./assetes/page5-background-photos/photo_030.jpg
-      ./assetes/page5-background-photos/photo_031.jpg
-      ./assetes/page5-background-photos/photo_032.jpg
-      ./assetes/page5-background-photos/photo_033.jpg
-      ./assetes/page5-background-photos/photo_034.jpg
-      ./assetes/page5-background-photos/photo_035.jpg
-      ./assetes/page5-background-photos/photo_036.jpg
-      ./assetes/page5-background-photos/photo_037.jpg
-      ./assetes/page5-background-photos/photo_038.jpg
-      ./assetes/page5-background-photos/photo_039.jpg
-      ./assetes/page5-background-photos/photo_040.jpg
-      ./assetes/page5-background-photos/photo_041.jpg
-      ./assetes/page5-background-photos/photo_042.jpg
-      ./assetes/page5-background-photos/photo_043.jpg
-      ./assetes/page5-background-photos/photo_044.jpg
-      ./assetes/page5-background-photos/photo_045.jpg
-      ./assetes/page5-background-photos/photo_046.jpg
-      ./assetes/page5-background-photos/photo_047.jpg
-      ./assetes/page5-background-photos/photo_048.jpg
-      ./assetes/page5-background-photos/photo_049.jpg
-      ./assetes/page5-background-photos/photo_050.jpg
-      ./assetes/page5-background-photos/photo_051.jpg
-      ./assetes/page5-background-photos/photo_052.jpg
-      ./assetes/page5-background-photos/photo_053.jpg
-      ./assetes/page5-background-photos/photo_054.jpg
-      ./assetes/page5-background-photos/photo_055.jpg
-      ./assetes/page5-background-photos/photo_056.jpg
-      ./assetes/page5-background-photos/photo_057.jpg
-      ./assetes/page5-background-photos/photo_058.jpg
-      ./assetes/page5-background-photos/photo_059.jpg
-      ./assetes/page5-background-photos/photo_060.jpg
-      ./assetes/page5-background-photos/photo_061.jpg
-      ./assetes/page5-background-photos/photo_062.jpg
-      ./assetes/page5-background-photos/photo_063.jpg
-      ./assetes/page5-background-photos/photo_064.jpg
-      ./assetes/page5-background-photos/photo_065.jpg
-      ./assetes/page5-background-photos/photo_066.jpg
-      ./assetes/page5-background-photos/photo_067.jpg
-      ./assetes/page5-background-photos/photo_068.jpg
-      ./assetes/page5-background-photos/photo_069.jpg
-      ./assetes/page5-background-photos/photo_070.jpg
-      ./assetes/page5-background-photos/photo_071.jpg
-      ./assetes/page5-background-photos/photo_072.jpg
-      ./assetes/page5-background-photos/photo_073.jpg
-      ./assetes/page5-background-photos/photo_074.jpg
-      ./assetes/page5-background-photos/photo_075.jpg
-      ./assetes/page5-background-photos/photo_076.jpg
-      ./assetes/page5-background-photos/photo_077.jpg
-      ./assetes/page5-background-photos/photo_078.jpg
-      ./assetes/page5-background-photos/photo_079.jpg
-      ./assetes/page5-background-photos/photo_080.jpg
-      ./assetes/page5-background-photos/photo_081.jpg
-      ./assetes/page5-background-photos/photo_082.jpg
-      ./assetes/page5-background-photos/photo_083.jpg
-      ./assetes/page5-background-photos/photo_084.jpg
-      ./assetes/page5-background-photos/photo_085.jpg
-      ./assetes/page5-background-photos/photo_086.jpg
-      ./assetes/page5-background-photos/photo_087.jpg
-      ./assetes/page5-background-photos/photo_088.jpg
-      ./assetes/page5-background-photos/photo_089.jpg
-      ./assetes/page5-background-photos/photo_090.jpg
-      ./assetes/page5-background-photos/photo_091.jpg
-      ./assetes/page5-background-photos/photo_092.jpg
-      ./assetes/page5-background-photos/photo_093.jpg
-      ./assetes/page5-background-photos/photo_094.jpg
-      ./assetes/page5-background-photos/photo_095.jpg
-      ./assetes/page5-background-photos/photo_096.jpg
-      ./assetes/page5-background-photos/photo_097.jpg
-      ./assetes/page5-background-photos/photo_098.jpg
-      ./assetes/page5-background-photos/photo_099.jpg
-      ./assetes/page5-background-photos/photo_0100.jpg
+      ./assetes/page5-background-photos/0001.jpg
+./assetes/page5-background-photos/0002.jpg
+./assetes/page5-background-photos/0003.jpg
+./assetes/page5-background-photos/0004.jpg
+./assetes/page5-background-photos/0005.jpg
+./assetes/page5-background-photos/0006.jpg
+./assetes/page5-background-photos/0007.jpg
+./assetes/page5-background-photos/0008.jpg
+./assetes/page5-background-photos/0009.jpg
+./assetes/page5-background-photos/0010.jpg
+./assetes/page5-background-photos/0011.jpg
+./assetes/page5-background-photos/0012.jpg
+./assetes/page5-background-photos/0013.jpg
+./assetes/page5-background-photos/0014.jpg
+./assetes/page5-background-photos/0015.jpg
+./assetes/page5-background-photos/0016.jpg
+./assetes/page5-background-photos/0017.jpg
+./assetes/page5-background-photos/0018.jpg
+./assetes/page5-background-photos/0019.jpg
+./assetes/page5-background-photos/0020.jpg
+./assetes/page5-background-photos/0021.jpg
+./assetes/page5-background-photos/0022.jpg
+./assetes/page5-background-photos/0023.jpg
+./assetes/page5-background-photos/0024.jpg
+./assetes/page5-background-photos/0025.jpg
+./assetes/page5-background-photos/0026.jpg
+./assetes/page5-background-photos/0027.jpg
+./assetes/page5-background-photos/0028.jpg
+./assetes/page5-background-photos/0029.jpg
+./assetes/page5-background-photos/0030.jpg
+./assetes/page5-background-photos/0031.jpg
+./assetes/page5-background-photos/0032.jpg
+./assetes/page5-background-photos/0033.jpg
+./assetes/page5-background-photos/0034.jpg
+./assetes/page5-background-photos/0035.jpg
+./assetes/page5-background-photos/0036.jpg
+./assetes/page5-background-photos/0037.jpg
+./assetes/page5-background-photos/0038.jpg
+./assetes/page5-background-photos/0039.jpg
+./assetes/page5-background-photos/0040.jpg
+./assetes/page5-background-photos/0041.jpg
+./assetes/page5-background-photos/0042.jpg
+./assetes/page5-background-photos/0043.jpg
+./assetes/page5-background-photos/0044.jpg
+./assetes/page5-background-photos/0045.jpg
+./assetes/page5-background-photos/0046.jpg
+./assetes/page5-background-photos/0047.jpg
+./assetes/page5-background-photos/0048.jpg
+./assetes/page5-background-photos/0049.jpg
+./assetes/page5-background-photos/0050.jpg
+./assetes/page5-background-photos/0051.jpg
+./assetes/page5-background-photos/0052.jpg
+./assetes/page5-background-photos/0053.jpg
+./assetes/page5-background-photos/0054.jpg
+./assetes/page5-background-photos/0055.jpg
+./assetes/page5-background-photos/0056.jpg
+./assetes/page5-background-photos/0057.jpg
+./assetes/page5-background-photos/0058.jpg
+./assetes/page5-background-photos/0059.jpg
+./assetes/page5-background-photos/0060.jpg
+./assetes/page5-background-photos/0061.jpg
+./assetes/page5-background-photos/0062.jpg
+./assetes/page5-background-photos/0063.jpg
+./assetes/page5-background-photos/0064.jpg
+./assetes/page5-background-photos/0065.jpg
+./assetes/page5-background-photos/0066.jpg
+./assetes/page5-background-photos/0067.jpg
+./assetes/page5-background-photos/0068.jpg
+./assetes/page5-background-photos/0069.jpg
+./assetes/page5-background-photos/0070.jpg
+./assetes/page5-background-photos/0071.jpg
+./assetes/page5-background-photos/0072.jpg
+./assetes/page5-background-photos/0073.jpg
+./assetes/page5-background-photos/0074.jpg
+./assetes/page5-background-photos/0075.jpg
+./assetes/page5-background-photos/0076.jpg
+./assetes/page5-background-photos/0077.jpg
+./assetes/page5-background-photos/0078.jpg
+./assetes/page5-background-photos/0079.jpg
+./assetes/page5-background-photos/0080.jpg
+./assetes/page5-background-photos/0081.jpg
+./assetes/page5-background-photos/0082.jpg
+./assetes/page5-background-photos/0083.jpg
+./assetes/page5-background-photos/0084.jpg
+./assetes/page5-background-photos/0085.jpg
+./assetes/page5-background-photos/0086.jpg
+./assetes/page5-background-photos/0087.jpg
+./assetes/page5-background-photos/0088.jpg
+./assetes/page5-background-photos/0089.jpg
+./assetes/page5-background-photos/0090.jpg
+./assetes/page5-background-photos/0091.jpg
+./assetes/page5-background-photos/0092.jpg
+./assetes/page5-background-photos/0093.jpg
+./assetes/page5-background-photos/0094.jpg
+./assetes/page5-background-photos/0095.jpg
+./assetes/page5-background-photos/0096.jpg
+./assetes/page5-background-photos/0097.jpg
+./assetes/page5-background-photos/0098.jpg
+./assetes/page5-background-photos/0099.jpg
+./assetes/page5-background-photos/0100.jpg
+./assetes/page5-background-photos/0101.jpg
+./assetes/page5-background-photos/0102.jpg
+./assetes/page5-background-photos/0103.jpg
+./assetes/page5-background-photos/0104.jpg
+./assetes/page5-background-photos/0105.jpg
+./assetes/page5-background-photos/0106.jpg
+./assetes/page5-background-photos/0107.jpg
+./assetes/page5-background-photos/0108.jpg
+./assetes/page5-background-photos/0109.jpg
+./assetes/page5-background-photos/0110.jpg
+./assetes/page5-background-photos/0111.jpg
+./assetes/page5-background-photos/0112.jpg
+./assetes/page5-background-photos/0113.jpg
+./assetes/page5-background-photos/0114.jpg
+./assetes/page5-background-photos/0115.jpg
+./assetes/page5-background-photos/0116.jpg
+./assetes/page5-background-photos/0117.jpg
+./assetes/page5-background-photos/0118.jpg
+./assetes/page5-background-photos/0119.jpg
+./assetes/page5-background-photos/0120.jpg
+./assetes/page5-background-photos/0121.jpg
+./assetes/page5-background-photos/0122.jpg
+./assetes/page5-background-photos/0123.jpg
+./assetes/page5-background-photos/0124.jpg
+./assetes/page5-background-photos/0125.jpg
+./assetes/page5-background-photos/0126.jpg
+./assetes/page5-background-photos/0127.jpg
+./assetes/page5-background-photos/0128.jpg
+./assetes/page5-background-photos/0129.jpg
+./assetes/page5-background-photos/0130.jpg
+./assetes/page5-background-photos/0131.jpg
+./assetes/page5-background-photos/0132.jpg
+./assetes/page5-background-photos/0133.jpg
+./assetes/page5-background-photos/0134.jpg
+./assetes/page5-background-photos/0135.jpg
+./assetes/page5-background-photos/0136.jpg
+./assetes/page5-background-photos/0137.jpg
+./assetes/page5-background-photos/0138.jpg
+./assetes/page5-background-photos/0139.jpg
+./assetes/page5-background-photos/0140.jpg
+./assetes/page5-background-photos/0141.jpg
+./assetes/page5-background-photos/0142.jpg
+./assetes/page5-background-photos/0143.jpg
+./assetes/page5-background-photos/0144.jpg
+./assetes/page5-background-photos/0145.jpg
+./assetes/page5-background-photos/0146.jpg
+./assetes/page5-background-photos/0147.jpg
+./assetes/page5-background-photos/0148.jpg
+./assetes/page5-background-photos/0149.jpg
+./assetes/page5-background-photos/0150.jpg
+./assetes/page5-background-photos/0151.jpg
+./assetes/page5-background-photos/0152.jpg
+./assetes/page5-background-photos/0153.jpg
+./assetes/page5-background-photos/0154.jpg
+./assetes/page5-background-photos/0155.jpg
+./assetes/page5-background-photos/0156.jpg
+./assetes/page5-background-photos/0157.jpg
+./assetes/page5-background-photos/0158.jpg
+./assetes/page5-background-photos/0159.jpg
+./assetes/page5-background-photos/0160.jpg
+./assetes/page5-background-photos/0161.jpg
+./assetes/page5-background-photos/0162.jpg
+./assetes/page5-background-photos/0163.jpg
+./assetes/page5-background-photos/0164.jpg
+./assetes/page5-background-photos/0165.jpg
+./assetes/page5-background-photos/0166.jpg
+./assetes/page5-background-photos/0167.jpg
+./assetes/page5-background-photos/0168.jpg
+./assetes/page5-background-photos/0169.jpg
+./assetes/page5-background-photos/0170.jpg
+./assetes/page5-background-photos/0171.jpg
+./assetes/page5-background-photos/0172.jpg
+./assetes/page5-background-photos/0173.jpg
+./assetes/page5-background-photos/0174.jpg
+./assetes/page5-background-photos/0175.jpg
+./assetes/page5-background-photos/0176.jpg
+./assetes/page5-background-photos/0177.jpg
+./assetes/page5-background-photos/0178.jpg
+./assetes/page5-background-photos/0179.jpg
+./assetes/page5-background-photos/0180.jpg
+./assetes/page5-background-photos/0181.jpg
+./assetes/page5-background-photos/0182.jpg
+./assetes/page5-background-photos/0183.jpg
+./assetes/page5-background-photos/0184.jpg
+./assetes/page5-background-photos/0185.jpg
+./assetes/page5-background-photos/0186.jpg
+./assetes/page5-background-photos/0187.jpg
+./assetes/page5-background-photos/0188.jpg
+./assetes/page5-background-photos/0189.jpg
+./assetes/page5-background-photos/0190.jpg
+./assetes/page5-background-photos/0191.jpg
+./assetes/page5-background-photos/0192.jpg
+./assetes/page5-background-photos/0193.jpg
+./assetes/page5-background-photos/0194.jpg
+./assetes/page5-background-photos/0195.jpg
+./assetes/page5-background-photos/0196.jpg
+./assetes/page5-background-photos/0197.jpg
+./assetes/page5-background-photos/0198.jpg
+./assetes/page5-background-photos/0199.jpg
+./assetes/page5-background-photos/0200.jpg
+./assetes/page5-background-photos/0201.jpg
+./assetes/page5-background-photos/0202.jpg
+./assetes/page5-background-photos/0203.jpg
+./assetes/page5-background-photos/0204.jpg
+./assetes/page5-background-photos/0205.jpg
+./assetes/page5-background-photos/0206.jpg
+./assetes/page5-background-photos/0207.jpg
+./assetes/page5-background-photos/0208.jpg
+./assetes/page5-background-photos/0209.jpg
+./assetes/page5-background-photos/0210.jpg
+./assetes/page5-background-photos/0211.jpg
+./assetes/page5-background-photos/0212.jpg
+./assetes/page5-background-photos/0213.jpg
+./assetes/page5-background-photos/0214.jpg
+./assetes/page5-background-photos/0215.jpg
+./assetes/page5-background-photos/0216.jpg
+./assetes/page5-background-photos/0217.jpg
+./assetes/page5-background-photos/0218.jpg
+./assetes/page5-background-photos/0219.jpg
+./assetes/page5-background-photos/0220.jpg
+./assetes/page5-background-photos/0221.jpg
+./assetes/page5-background-photos/0222.jpg
+./assetes/page5-background-photos/0223.jpg
+./assetes/page5-background-photos/0224.jpg
+./assetes/page5-background-photos/0225.jpg
+./assetes/page5-background-photos/0226.jpg
+./assetes/page5-background-photos/0227.jpg
+./assetes/page5-background-photos/0228.jpg
+./assetes/page5-background-photos/0229.jpg
+./assetes/page5-background-photos/0230.jpg
+./assetes/page5-background-photos/0231.jpg
+./assetes/page5-background-photos/0232.jpg
+./assetes/page5-background-photos/0233.jpg
+./assetes/page5-background-photos/0234.jpg
+./assetes/page5-background-photos/0235.jpg
+./assetes/page5-background-photos/0236.jpg
+./assetes/page5-background-photos/0237.jpg
+./assetes/page5-background-photos/0238.jpg
+./assetes/page5-background-photos/0239.jpg
+./assetes/page5-background-photos/0240.jpg
+./assetes/page5-background-photos/0241.jpg
+./assetes/page5-background-photos/0242.jpg
+./assetes/page5-background-photos/0243.jpg
+./assetes/page5-background-photos/0244.jpg
+./assetes/page5-background-photos/0245.jpg
+./assetes/page5-background-photos/0246.jpg
+./assetes/page5-background-photos/0247.jpg
+./assetes/page5-background-photos/0248.jpg
+./assetes/page5-background-photos/0249.jpg
+./assetes/page5-background-photos/0250.jpg
+./assetes/page5-background-photos/0251.jpg
+./assetes/page5-background-photos/0252.jpg
+./assetes/page5-background-photos/0253.jpg
+./assetes/page5-background-photos/0254.jpg
+./assetes/page5-background-photos/0255.jpg
+./assetes/page5-background-photos/0256.jpg
+./assetes/page5-background-photos/0257.jpg
+./assetes/page5-background-photos/0258.jpg
+./assetes/page5-background-photos/0259.jpg
+./assetes/page5-background-photos/0260.jpg
+./assetes/page5-background-photos/0261.jpg
+./assetes/page5-background-photos/0262.jpg
+./assetes/page5-background-photos/0263.jpg
+./assetes/page5-background-photos/0264.jpg
+./assetes/page5-background-photos/0265.jpg
+./assetes/page5-background-photos/0266.jpg
+./assetes/page5-background-photos/0267.jpg
+./assetes/page5-background-photos/0268.jpg
+./assetes/page5-background-photos/0269.jpg
+./assetes/page5-background-photos/0270.jpg
+./assetes/page5-background-photos/0271.jpg
+./assetes/page5-background-photos/0272.jpg
+./assetes/page5-background-photos/0273.jpg
+./assetes/page5-background-photos/0274.jpg
+./assetes/page5-background-photos/0275.jpg
+./assetes/page5-background-photos/0276.jpg
+./assetes/page5-background-photos/0277.jpg
+./assetes/page5-background-photos/0278.jpg
+./assetes/page5-background-photos/0279.jpg
+./assetes/page5-background-photos/0280.jpg
+./assetes/page5-background-photos/0281.jpg
+./assetes/page5-background-photos/0282.jpg
+./assetes/page5-background-photos/0283.jpg
+./assetes/page5-background-photos/0284.jpg
+./assetes/page5-background-photos/0285.jpg
+./assetes/page5-background-photos/0286.jpg
+./assetes/page5-background-photos/0287.jpg
+./assetes/page5-background-photos/0288.jpg
+./assetes/page5-background-photos/0289.jpg
+./assetes/page5-background-photos/0290.jpg
+./assetes/page5-background-photos/0291.jpg
+./assetes/page5-background-photos/0292.jpg
+./assetes/page5-background-photos/0293.jpg
+./assetes/page5-background-photos/0294.jpg
+./assetes/page5-background-photos/0295.jpg
+./assetes/page5-background-photos/0296.jpg
+./assetes/page5-background-photos/0297.jpg
+./assetes/page5-background-photos/0298.jpg
+./assetes/page5-background-photos/0299.jpg
+./assetes/page5-background-photos/0300.jpg
      `;
       return data.split("\n")[index];
     }
   
-    const frameCount = 121;
+    const frameCount = 100;
   
     const images = [];
     const imageSeq = {
@@ -530,15 +730,14 @@ document
       img.height * ratio
     );
   }
-  ScrollTrigger.create({
-  
-      trigger: "#page5" ,
-      pin: true,
-    // markers:true,
-    scroller: `#main`,
-  //   set start end according to preference
-    start: `top top`,
-    end: `200% top`,
-  });
+ // Scroll-triggered pinning
+ScrollTrigger.create({
+  trigger: "#page5",
+  pin: true,
+  start: "top top",
+  end: "200% top",
+  scroller: "#main",
+});
+
 }
 canvas1();
