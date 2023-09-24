@@ -223,80 +223,75 @@ function canvas() {
     render();
   }
 
-//   // Set an interval to update the frame every 100 milliseconds
-//   const animationInterval = setInterval(updateFrame, 100);
+  //   // Set an interval to update the frame every 100 milliseconds
+  //   const animationInterval = setInterval(updateFrame, 100);
 
-//   images[1].onload = render;
+  //   images[1].onload = render;
 
-//   function render() {
-//     context.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-//     scaleImage(images[imageSeq.frame], context);
-//   }
+  //   function render() {
+  //     context.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+  //     scaleImage(images[imageSeq.frame], context);
+  //   }
 
-//   function scaleImage(img, ctx) {
-//     var canvas = ctx.canvas;
-//     var hRatio = canvas.width / img.width;
-//     var vRatio = canvas.height / img.height;
-//     var ratio = Math.max(hRatio, vRatio);
-//     var centerShift_x = (canvas.width - img.width * ratio) / 2;
-//     var centerShift_y = (canvas.height - img.height * ratio) / 2;
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     ctx.drawImage(
-//       img,
-//       0,
-//       0,
-//       img.width,
-//       img.height,
-//       centerShift_x,
-//       centerShift_y,
-//       img.width * ratio,
-//       img.height * ratio
-//     );
-//   }
-//   // ... (your image scaling logic)
-// }
+  //   function scaleImage(img, ctx) {
+  //     var canvas = ctx.canvas;
+  //     var hRatio = canvas.width / img.width;
+  //     var vRatio = canvas.height / img.height;
+  //     var ratio = Math.max(hRatio, vRatio);
+  //     var centerShift_x = (canvas.width - img.width * ratio) / 2;
+  //     var centerShift_y = (canvas.height - img.height * ratio) / 2;
+  //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+  //     ctx.drawImage(
+  //       img,
+  //       0,
+  //       0,
+  //       img.width,
+  //       img.height,
+  //       centerShift_x,
+  //       centerShift_y,
+  //       img.width * ratio,
+  //       img.height * ratio
+  //     );
+  //   }
+  //   // ... (your image scaling logic)
+  // }
 
-// Scroll-triggered pinning
-// ScrollTrigger.create({
-//   trigger: "#page3",
-//   pin: true,
-//   start: "top top",
-//   end: "250% top",
-//   scroller: "#main",
-// });
+  // Scroll-triggered pinning
+  // ScrollTrigger.create({
+  //   trigger: "#page3",
+  //   pin: true,
+  //   start: "top top",
+  //   end: "250% top",
+  //   scroller: "#main",
+  // });
 
-
-
-
-
-
-// ----------------------------------------------------------------------------------------------
-// Used for different approch
-// ----------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------------------
+  // Used for different approch
+  // ----------------------------------------------------------------------------------------------
 
   gsap.to(imageSeq, {
-      frame: frameCount - 1,
+    frame: frameCount - 1,
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-        scrub: .5,
-        trigger: `#page3>canvas`,
-        //   set start end according to preference
-        start: `top top`,
-        end: `250% top`,
-        scroller: `#main`,
-      },
-      onUpdate: render,
-    });
-  
-    images[1].onload = render;
-  
+      scrub: 0.5,
+      trigger: `#page3>canvas`,
+      //   set start end according to preference
+      start: `top top`,
+      end: `250% top`,
+      scroller: `#main`,
+    },
+    onUpdate: render,
+  });
+
+  images[1].onload = render;
+
   function render() {
-      scaleImage(images[imageSeq.frame], context);
-    }
-  
-    function scaleImage(img, ctx) {
-        var canvas = ctx.canvas;
+    scaleImage(images[imageSeq.frame], context);
+  }
+
+  function scaleImage(img, ctx) {
+    var canvas = ctx.canvas;
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
     var ratio = Math.max(hRatio, vRatio);
@@ -316,18 +311,16 @@ function canvas() {
     );
   }
   ScrollTrigger.create({
-  
-      trigger: "#page3" ,
-      pin: true,
+    trigger: "#page3",
+    pin: true,
     // markers:true,
     scroller: `#main`,
-  //   set start end according to preference
+    //   set start end according to preference
     start: `top top`,
     end: `200% top`,
   });
 }
 canvas();
-
 
 var clutter = "";
 document
@@ -338,41 +331,33 @@ document
     document.querySelector("#page4>h3").innerHTML = clutter;
   });
 
-  gsap.to("#page4>h3>span", {
-    ScrollTrigger: {
-      trigger: `#page4>h3`,
-      start: `top bottom`,
-      end: `bottom top`,
-      scroller: `#main`,
-      scrub: .5,
-    },
-    stagger: .1,
-    color: `white`,
-  });
+gsap.to("#page4>h3>span", {
+  ScrollTrigger: {
+    trigger: `#page4>h3`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.5,
+  },
+  stagger: 0.1,
+  color: `white`,
+});
 
+function canvas1() {
+  const canvas = document.querySelector("#page5>canvas");
+  const context = canvas.getContext("2d");
 
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 
-
-
-
-
-
-
-  function canvas1() {
-    const canvas = document.querySelector("#page5>canvas");
-    const context = canvas.getContext("2d");
-  
+  window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-  
-    window.addEventListener("resize", function () {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      render();
-    });
-  
-    function files(index) {
-      var data = `
+    render();
+  });
+
+  function files(index) {
+    var data = `
       ./assetes/page5-background-photos/0001.jpg
 ./assetes/page5-background-photos/0002.jpg
 ./assetes/page5-background-photos/0003.jpg
@@ -674,44 +659,44 @@ document
 ./assetes/page5-background-photos/0299.jpg
 ./assetes/page5-background-photos/0300.jpg
      `;
-      return data.split("\n")[index];
-    }
-  
-    const frameCount = 100;
-  
-    const images = [];
-    const imageSeq = {
-      frame: 1,
-    };
-  
-    for (let i = 0; i < frameCount; i++) {
-      const img = new Image();
-      img.src = files(i);
-      images.push(img);
-    }
-    gsap.to(imageSeq, {
-      frame: frameCount - 1,
+    return data.split("\n")[index];
+  }
+
+  const frameCount = 261;
+
+  const images = [];
+  const imageSeq = {
+    frame: 1,
+  };
+
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = files(i);
+    images.push(img);
+  }
+  gsap.to(imageSeq, {
+    frame: frameCount - 1,
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-        scrub: .5,
-        trigger: `#page5>canvas`,
-        //   set start end according to preference
-        start: `top top`,
-        end: `250% top`,
-        scroller: `#main`,
-      },
-      onUpdate: render,
-    });
-  
-    images[1].onload = render;
-  
+      scrub: 0.5,
+      trigger: `#page5>canvas`,
+      //   set start end according to preference
+      start: `top top`,
+      end: `250% top`,
+      scroller: `#main`,
+    },
+    onUpdate: render,
+  });
+
+  images[1].onload = render;
+
   function render() {
-      scaleImage(images[imageSeq.frame], context);
-    }
-  
-    function scaleImage(img, ctx) {
-        var canvas = ctx.canvas;
+    scaleImage(images[imageSeq.frame], context);
+  }
+
+  function scaleImage(img, ctx) {
+    var canvas = ctx.canvas;
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
     var ratio = Math.max(hRatio, vRatio);
@@ -730,14 +715,13 @@ document
       img.height * ratio
     );
   }
- // Scroll-triggered pinning
-ScrollTrigger.create({
-  trigger: "#page5",
-  pin: true,
-  start: "top top",
-  end: "200% top",
-  scroller: "#main",
-});
-
+  // Scroll-triggered pinning
+  ScrollTrigger.create({
+    trigger: "#page5",
+    pin: true,
+    start: "top top",
+    end: "200% top",
+    scroller: "#main",
+  });
 }
 canvas1();
