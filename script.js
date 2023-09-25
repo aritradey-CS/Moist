@@ -504,7 +504,7 @@ function canvas2() {
 
   function files(index) {
     var data = ` 
-    ./assetes/page7-background-photos/0001.jpg
+./assetes/page7-background-photos/0001.jpg
 ./assetes/page7-background-photos/0002.jpg
 ./assetes/page7-background-photos/0003.jpg
 ./assetes/page7-background-photos/0004.jpg
@@ -554,7 +554,7 @@ function canvas2() {
 ./assetes/page7-background-photos/0048.jpg
 ./assetes/page7-background-photos/0049.jpg
 ./assetes/page7-background-photos/0050.jpg
-./assetes/page7-background-photos/0051.jpg `;
+ `;
     return data.split("\n")[index];
   }
 
