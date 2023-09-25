@@ -487,3 +487,136 @@ gsap.to("#page6>h3>span", {
   stagger: 0.2,
   color: `white`,
 });
+
+
+function canvas2() {
+  const canvas = document.querySelector("#page7>canvas");
+  const context = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    render();
+  });
+
+  function files(index) {
+    var data = ` 
+    ./assetes/page6-background-photos/0001.jpg
+    ./assetes/page6-background-photos/0002.jpg
+    ./assetes/page6-background-photos/0003.jpg
+    ./assetes/page6-background-photos/0004.jpg
+    ./assetes/page6-background-photos/0005.jpg
+    ./assetes/page6-background-photos/0006.jpg
+    ./assetes/page6-background-photos/0007.jpg
+    ./assetes/page6-background-photos/0008.jpg
+    ./assetes/page6-background-photos/0009.jpg
+    ./assetes/page6-background-photos/0010.jpg
+    ./assetes/page6-background-photos/0011.jpg
+    ./assetes/page6-background-photos/0012.jpg
+    ./assetes/page6-background-photos/0013.jpg
+    ./assetes/page6-background-photos/0014.jpg
+    ./assetes/page6-background-photos/0015.jpg
+    ./assetes/page6-background-photos/0016.jpg
+    ./assetes/page6-background-photos/0017.jpg
+    ./assetes/page6-background-photos/0018.jpg
+    ./assetes/page6-background-photos/0019.jpg
+    ./assetes/page6-background-photos/0020.jpg
+    ./assetes/page6-background-photos/0021.jpg
+    ./assetes/page6-background-photos/0022.jpg
+    ./assetes/page6-background-photos/0023.jpg
+    ./assetes/page6-background-photos/0024.jpg
+    ./assetes/page6-background-photos/0025.jpg
+    ./assetes/page6-background-photos/0026.jpg
+    ./assetes/page6-background-photos/0027.jpg
+    ./assetes/page6-background-photos/0028.jpg
+    ./assetes/page6-background-photos/0029.jpg
+    ./assetes/page6-background-photos/0030.jpg
+    ./assetes/page6-background-photos/0031.jpg
+    ./assetes/page6-background-photos/0032.jpg
+    ./assetes/page6-background-photos/0033.jpg
+    ./assetes/page6-background-photos/0034.jpg
+    ./assetes/page6-background-photos/0035.jpg
+    ./assetes/page6-background-photos/0036.jpg
+    ./assetes/page6-background-photos/0037.jpg
+    ./assetes/page6-background-photos/0038.jpg
+    ./assetes/page6-background-photos/0039.jpg
+    ./assetes/page6-background-photos/0040.jpg
+    ./assetes/page6-background-photos/0041.jpg
+    ./assetes/page6-background-photos/0042.jpg
+    ./assetes/page6-background-photos/0043.jpg
+    ./assetes/page6-background-photos/0044.jpg
+    ./assetes/page6-background-photos/0045.jpg
+    ./assetes/page6-background-photos/0046.jpg
+    ./assetes/page6-background-photos/0047.jpg
+    ./assetes/page6-background-photos/0048.jpg
+    ./assetes/page6-background-photos/0049.jpg
+    ./assetes/page6-background-photos/0050.jpg `;
+    return data.split("\n")[index];
+  }
+
+  const frameCount = 50;
+
+  const images = [];
+  const imageSeq = {
+    frame: 1,
+  };
+
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = files(i);
+    images.push(img);
+  }
+  gsap.to(imageSeq, {
+    frame: frameCount - 1,
+    snap: "frame",
+    ease: `none`,
+    scrollTrigger: {
+      scrub: 0.5,
+      trigger: `#page7>canvas`,
+      //   set start end according to preference
+      start: `top top`,
+      end: `250% top`,
+      scroller: `#main`,
+    },
+    onUpdate: render,
+  });
+
+  images[1].onload = render;
+
+  function render() {
+    scaleImage(images[imageSeq.frame], context);
+  }
+
+  function scaleImage(img, ctx) {
+    var canvas = ctx.canvas;
+    var hRatio = canvas.width / img.width;
+    var vRatio = canvas.height / img.height;
+    var ratio = Math.max(hRatio, vRatio);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+      img,
+      0,
+      0,
+      img.width,
+      img.height,
+      centerShift_x,
+      centerShift_y,
+      img.width * ratio,
+      img.height * ratio
+    );
+  }
+  // Scroll-triggered pinning
+  ScrollTrigger.create({
+    trigger: "#page7",
+    pin: true,
+    start: "top top",
+    end: "200% top",
+    scroller: "#main",
+  });
+}
+canvas2();
