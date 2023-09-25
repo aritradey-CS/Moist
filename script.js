@@ -504,56 +504,57 @@ function canvas2() {
 
   function files(index) {
     var data = ` 
-    ./assetes/page6-background-photos/0001.jpg
-    ./assetes/page6-background-photos/0002.jpg
-    ./assetes/page6-background-photos/0003.jpg
-    ./assetes/page6-background-photos/0004.jpg
-    ./assetes/page6-background-photos/0005.jpg
-    ./assetes/page6-background-photos/0006.jpg
-    ./assetes/page6-background-photos/0007.jpg
-    ./assetes/page6-background-photos/0008.jpg
-    ./assetes/page6-background-photos/0009.jpg
-    ./assetes/page6-background-photos/0010.jpg
-    ./assetes/page6-background-photos/0011.jpg
-    ./assetes/page6-background-photos/0012.jpg
-    ./assetes/page6-background-photos/0013.jpg
-    ./assetes/page6-background-photos/0014.jpg
-    ./assetes/page6-background-photos/0015.jpg
-    ./assetes/page6-background-photos/0016.jpg
-    ./assetes/page6-background-photos/0017.jpg
-    ./assetes/page6-background-photos/0018.jpg
-    ./assetes/page6-background-photos/0019.jpg
-    ./assetes/page6-background-photos/0020.jpg
-    ./assetes/page6-background-photos/0021.jpg
-    ./assetes/page6-background-photos/0022.jpg
-    ./assetes/page6-background-photos/0023.jpg
-    ./assetes/page6-background-photos/0024.jpg
-    ./assetes/page6-background-photos/0025.jpg
-    ./assetes/page6-background-photos/0026.jpg
-    ./assetes/page6-background-photos/0027.jpg
-    ./assetes/page6-background-photos/0028.jpg
-    ./assetes/page6-background-photos/0029.jpg
-    ./assetes/page6-background-photos/0030.jpg
-    ./assetes/page6-background-photos/0031.jpg
-    ./assetes/page6-background-photos/0032.jpg
-    ./assetes/page6-background-photos/0033.jpg
-    ./assetes/page6-background-photos/0034.jpg
-    ./assetes/page6-background-photos/0035.jpg
-    ./assetes/page6-background-photos/0036.jpg
-    ./assetes/page6-background-photos/0037.jpg
-    ./assetes/page6-background-photos/0038.jpg
-    ./assetes/page6-background-photos/0039.jpg
-    ./assetes/page6-background-photos/0040.jpg
-    ./assetes/page6-background-photos/0041.jpg
-    ./assetes/page6-background-photos/0042.jpg
-    ./assetes/page6-background-photos/0043.jpg
-    ./assetes/page6-background-photos/0044.jpg
-    ./assetes/page6-background-photos/0045.jpg
-    ./assetes/page6-background-photos/0046.jpg
-    ./assetes/page6-background-photos/0047.jpg
-    ./assetes/page6-background-photos/0048.jpg
-    ./assetes/page6-background-photos/0049.jpg
-    ./assetes/page6-background-photos/0050.jpg `;
+    ./assetes/page7-background-photos/0001.jpg
+./assetes/page7-background-photos/0002.jpg
+./assetes/page7-background-photos/0003.jpg
+./assetes/page7-background-photos/0004.jpg
+./assetes/page7-background-photos/0005.jpg
+./assetes/page7-background-photos/0006.jpg
+./assetes/page7-background-photos/0007.jpg
+./assetes/page7-background-photos/0008.jpg
+./assetes/page7-background-photos/0009.jpg
+./assetes/page7-background-photos/0010.jpg
+./assetes/page7-background-photos/0011.jpg
+./assetes/page7-background-photos/0012.jpg
+./assetes/page7-background-photos/0013.jpg
+./assetes/page7-background-photos/0014.jpg
+./assetes/page7-background-photos/0015.jpg
+./assetes/page7-background-photos/0016.jpg
+./assetes/page7-background-photos/0017.jpg
+./assetes/page7-background-photos/0018.jpg
+./assetes/page7-background-photos/0019.jpg
+./assetes/page7-background-photos/0020.jpg
+./assetes/page7-background-photos/0021.jpg
+./assetes/page7-background-photos/0022.jpg
+./assetes/page7-background-photos/0023.jpg
+./assetes/page7-background-photos/0024.jpg
+./assetes/page7-background-photos/0025.jpg
+./assetes/page7-background-photos/0026.jpg
+./assetes/page7-background-photos/0027.jpg
+./assetes/page7-background-photos/0028.jpg
+./assetes/page7-background-photos/0029.jpg
+./assetes/page7-background-photos/0030.jpg
+./assetes/page7-background-photos/0031.jpg
+./assetes/page7-background-photos/0032.jpg
+./assetes/page7-background-photos/0033.jpg
+./assetes/page7-background-photos/0034.jpg
+./assetes/page7-background-photos/0035.jpg
+./assetes/page7-background-photos/0036.jpg
+./assetes/page7-background-photos/0037.jpg
+./assetes/page7-background-photos/0038.jpg
+./assetes/page7-background-photos/0039.jpg
+./assetes/page7-background-photos/0040.jpg
+./assetes/page7-background-photos/0041.jpg
+./assetes/page7-background-photos/0042.jpg
+./assetes/page7-background-photos/0043.jpg
+./assetes/page7-background-photos/0044.jpg
+./assetes/page7-background-photos/0045.jpg
+./assetes/page7-background-photos/0046.jpg
+./assetes/page7-background-photos/0047.jpg
+./assetes/page7-background-photos/0048.jpg
+./assetes/page7-background-photos/0049.jpg
+./assetes/page7-background-photos/0050.jpg
+./assetes/page7-background-photos/0051.jpg `;
     return data.split("\n")[index];
   }
 
@@ -620,3 +621,24 @@ function canvas2() {
   });
 }
 canvas2();
+
+var clutter = "";
+document
+  .querySelector("#page8>h3")
+  .textContent.split(" ")
+  .forEach(function (dets) {
+    clutter += `<span> ${dets} </span>`;
+    document.querySelector("#page8>h3").innerHTML = clutter;
+  });
+
+gsap.to("#page8>h3>span", {
+  ScrollTrigger: {
+    trigger: `#page8>h3`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.4,
+  },
+  stagger: 0.2,
+  color: `white`,
+});
