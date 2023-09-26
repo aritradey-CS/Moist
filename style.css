@@ -317,11 +317,14 @@ color:rgba(240, 255, 255, 0.5);
 
 .page7-cir{
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 9;
-  height: 40vh;
-  width: 40vw;
+  height: 30vw;
+  width: 30vw;
   border-radius: 50%;
-  background-color: #8b2fc0;
+  border: 1px solid #ffffff ;
 }
 
 #page7-exploreButton {
@@ -340,3 +343,5 @@ color:rgba(240, 255, 255, 0.5);
 #page7-exploreButton:hover {
   color: #1eff00a4; /* Change the text color on hover */
 }
+
+
