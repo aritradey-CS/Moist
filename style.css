@@ -315,18 +315,6 @@ color:rgba(240, 255, 255, 0.5);
   max-height: 100vh;
 }
 
-.page7-cir{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 9;
-  height: 30vw;
-  width: 30vw;
-  border-radius: 50%;
-  border: 1px solid #ffffff ;
-}
-
 #page7-exploreButton {
   position: absolute;
   bottom: 20px; /* Adjust this value to position the arrow and text vertically */
@@ -342,6 +330,28 @@ color:rgba(240, 255, 255, 0.5);
 
 #page7-exploreButton:hover {
   color: #1eff00a4; /* Change the text color on hover */
+}
+.page7-cir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  border: 1px solid #ffffff ;
+}
+.page7-cir-inner{
+height: 70%;
+width: 70%;
+border-radius: 50%;
+background-color: rgb(247, 0, 255);
+border-radius: 1px solid #ffffff;
+
 }
 
 
