@@ -349,9 +349,9 @@ color:rgba(240, 255, 255, 0.5);
 height: 70%;
 width: 70%;
 border-radius: 50%;
-background-color: rgb(247, 0, 255);
-border-radius: 1px solid #ffffff;
+background-color: transparent;
+border: 1px solid #ffffff;
+/* border: #ffffff; */
 
 }
-
 

@@ -301,7 +301,7 @@ gsap.to("#page4>h3>span", {
   stagger: 0.1,
   color: `white`,
 });
- 
+
 function canvas1() {
   const canvas = document.querySelector("#page5>canvas");
   const context = canvas.getContext("2d");
@@ -488,7 +488,6 @@ gsap.to("#page6>h3>span", {
   color: `white`,
 });
 
-
 function canvas2() {
   const canvas = document.querySelector("#page7>canvas");
   const context = canvas.getContext("2d");
@@ -609,12 +608,12 @@ function canvas2() {
       centerShift_y,
       img.width * ratio,
       img.height * ratio
-    );
-  }
-  // Scroll-triggered pinning
-  ScrollTrigger.create({
-    trigger: "#page7",
-    pin: true,
+      );
+    }
+    // Scroll-triggered pinning
+    ScrollTrigger.create({
+      trigger: "#page7",
+      pin: true,
     start: "top top",
     end: "200% top",
     scroller: "#main",
@@ -622,23 +621,48 @@ function canvas2() {
 }
 canvas2();
 
-var clutter = "";
-document
-  .querySelector("#page8>h3")
-  .textContent.split(" ")
-  .forEach(function (dets) {
-    clutter += `<span> ${dets} </span>`;
-    document.querySelector("#page8>h3").innerHTML = clutter;
-  });
-
-gsap.to("#page8>h3>span", {
-  ScrollTrigger: {
-    trigger: `#page8>h3`,
-    start: `top bottom`,
-    end: `bottom top`,
-    scroller: `#main`,
-    scrub: 0.4,
+gsap.to(".page7-cir", {
+  scrollTrigger: {
+    trigger: ".page7-cir",
+    start: "top center",
+    end: "bottom top",
+    markers: true,
+    scroller: "#main",
+    scrub: .5,
   },
-  stagger: 0.2,
-  color: `white`,
+  scale:1.5
+  // opacity: 0, // Example: Animate opacity to 0
 });
+
+
+
+
+
+
+
+
+
+
+
+
+// var clutter = "";
+// document
+//   .querySelector("#page8>h3")
+//   .textContent.split(" ")
+//   .forEach(function (dets) {
+//     clutter += `<span> ${dets} </span>`;
+//     document.querySelector("#page8>h3").innerHTML = clutter;
+//   });
+
+// gsap.to("#page8>h3>span", {
+//   ScrollTrigger: {
+//     trigger: `#page8>h3`,
+//     start: `top bottom`,
+//     end: `bottom top`,
+//     scroller: `#main`,
+//     scrub: 0.4,
+//   },
+//   stagger: 0.2,
+//   color: `white`,
+// });
+
