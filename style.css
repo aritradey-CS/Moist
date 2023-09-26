@@ -396,3 +396,25 @@ font-weight: 600;
   
   background-color: rgb(255, 255, 255);
 }
+
+#page9{
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+}
+
+.left9{
+  height: 100%;
+  width: 40%;
+  background-color: red;
+  position: relative;
+}
+
+.right9{
+  height: 100%;
+  width: 60%;
+  background-color: #8b2fc0;
+  position: relative;
+}
