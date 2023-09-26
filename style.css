@@ -355,3 +355,15 @@ border: 1px solid #ffffff;
 
 }
 
+#page8{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #131222;
+}
+
+#page8>video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
