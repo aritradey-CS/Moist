@@ -302,7 +302,7 @@ nav > img {
 }
 @media screen and (max-width: 768px) {
   #page6 > h1 {
-    margin-left: 2vw;
+    margin-left: 4vw;
     font-size: 3vh;
     color: rgb(240, 255, 255);
   }
@@ -607,36 +607,17 @@ nav > img {
   font-size: 1.3vw;
   width: 90%;
 }
-
-@media screen and(max-width:768px) {
-  #page10 {
-    display: flex;
-    flex-direction: column; /* Ensure content stacks vertically on small screens */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    height: auto; /* Adjust height as needed */
-    background-color: black;
-  }
-  
+@media screen and (max-width: 768px) {
   .right10 {
-    width: 100%; /* Take up the full width on small screens */
-    text-align: center; /* Center text on small screens */
+    width: 100%;
+    top: -30%;
+    left: 5%;
   }
-  
-  .right10-inner {
-    width: 100%; /* Take up the full width on small screens */
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 1rem; /* Add spacing between elements on small screens */
-  }
-  
   .right10-inner > h1 {
-    font-size: 3vw; /* Adjust font size for smaller screens */
+    font-size: 5vw; /* Adjusted font size for small screens */
+    
   }
-  
   .right10-inner > p {
-    font-size: 2vw; /* Adjust font size for smaller screens */
-    width: 90%;
+    font-size: 3vw; /* Adjusted font size for small screens */
   }
-  
 }
