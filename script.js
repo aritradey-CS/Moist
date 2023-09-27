@@ -648,15 +648,6 @@ gsap.to(".page7-cir-inner", {
 });
 
 
-
-
-
-
-
-
-
-
-
 var clutter = "";
 document
   .querySelector("#page8>h3")
