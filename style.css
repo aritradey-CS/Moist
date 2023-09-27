@@ -436,14 +436,15 @@ nav > img {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: aqua;
+  background-color: black;
 }
 
 .left9 {
   height: 100%;
   width: 40%;
-  background-color: red;
+  /* background-color: red; */
   position: relative;
+  font-family:"Raleway";
 }
 
 .right9 {
@@ -451,4 +452,15 @@ nav > img {
   width: 60%;
   background-color: #8b2fc0;
   position: relative;
+}
+
+.left9>h1{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-size: 5vw;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1;
 }
