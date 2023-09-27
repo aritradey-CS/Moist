@@ -480,17 +480,29 @@ nav > img {
 }
 
 @media screen and (max-width:768px) {
-
   #page9 {
     display: flex;
-    /* position: relative; */
+    flex-direction: column; /* Ensure content stacks vertically on small screens */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        background-color: black;
   }
+  
+  .left9 {
+    width: 100%; /* Take up the full width on small screens */
+    font-family: "Raleway";
+    text-align: center; /* Center text on small screens */
+    margin-bottom: 1%;
+  }
+  
+  .right9-center {
+    width: 100%; /* Take up the full width on small screens */
+    height: auto; /* Adjust height as needed */
+    margin-top: 1rem; /* Add spacing between elements on small screens */
+  }
+  
   }
   
   .left9 {
@@ -535,6 +547,30 @@ nav > img {
     left: 5%;
   }  
 
+  @media screen and (max-width:768px) {
+    .left9 > h1 {
+      position: absolute;
+      top: 30%;
+      left: 8%;
+      transform: translateY(-50%);
+      font-size: 5vw;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 1;
+    }
+    .right9-center {
+      height: 55%;
+      width: 85%;
+      background-color: #33ff00;
+      border-radius: 10px;
+      position: absolute;
+      top: -10%;
+      transform: translateY(-80%);
+      background-image: url(https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=600);
+      background-size: cover;
+      left: 7%;
+    }
+  }
 
 #page10{
   position: relative;
@@ -573,32 +609,34 @@ nav > img {
 }
 
 @media screen and(max-width:768px) {
-  .right10{
-    height: 100%;
-    width: 40%;
-    position:relative;
-    left: 40%;
-    /* background-color: magenta; */
-  }
-  .right10-inner{
+  #page10 {
     display: flex;
-    align-items: start;
-    flex-direction: column;
-    height: 35%;
-    width: 100%;
+    flex-direction: column; /* Ensure content stacks vertically on small screens */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    height: auto; /* Adjust height as needed */
+    background-color: black;
+  }
+  
+  .right10 {
+    width: 100%; /* Take up the full width on small screens */
+    text-align: center; /* Center text on small screens */
+  }
+  
+  .right10-inner {
+    width: 100%; /* Take up the full width on small screens */
     color: #ffffff;
-    /* background-color: #8b2fc0; */
     font-family: 'Quicksand', sans-serif;
+    margin-top: 1rem; /* Add spacing between elements on small screens */
   }
   
-  .right10-inner>h1{
-    font-size: 2vw;
-    
+  .right10-inner > h1 {
+    font-size: 3vw; /* Adjust font size for smaller screens */
   }
   
-  .right10-inner>p{
-    margin-top: 1vw;
-    font-size: 1.3vw;
+  .right10-inner > p {
+    font-size: 2vw; /* Adjust font size for smaller screens */
     width: 90%;
   }
+  
 }
