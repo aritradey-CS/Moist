@@ -493,7 +493,7 @@ nav > img {
   left: 40%;
   /* background-color: magenta; */
 }
-.right10-innter{
+.right10-inner{
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -506,11 +506,11 @@ nav > img {
 
 .right10-inner>h1{
   font-size: 2vw;
+  
 }
 
 .right10-inner>p{
-  margin-top: 2vw;
-  margin-right: 2vw;
-  font-size: 100;
-  width: 80%;
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  width: 90%;
 }
