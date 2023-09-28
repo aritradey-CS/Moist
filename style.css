@@ -709,3 +709,10 @@ nav > img {
 .page12-inner>p{
   font-size: 1.3vw;
 }
+
+#page13{
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+}
