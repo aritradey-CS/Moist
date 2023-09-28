@@ -630,35 +630,38 @@ nav > img {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #fff;
-  font-family:  "Raleway";
+  background-color: #000000;
+  font-family: "Quicksand" "Raleway";
 }
 
 #page11>h1{
   position: relative;
   top: 5%;
-  left: 10%;
+  left: 5%;
   font-size: 4vw;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 100;
 }
 
 .page11-inner{
+  color: #ffffff;
   display: flex;
-  top: 12%;
+  top: 10%;
   position: relative;
   margin-bottom: 2vw;
-  height: 30%;
+  height: 22%;
   width: 100%;
-  background-color: #33ff00;
+  /* background-color: #33ff00; */
 }
 
 .left11{
   position: relative;
   height: 100%;
   width: 40%;
-  background-color: #8b2fc0;
+  /* background-color: #8b2fc0; */
   left: 5%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .left11>img{
@@ -667,9 +670,18 @@ nav > img {
   object-fit: cover;
 }
 .right11{
+  padding: 2vw;
   left: 50%;
   position: absolute;
   height: 100%;
   width: 50%;
-  background-color:chocolate;
+  /* background-color:chocolate; */
+}
+
+.right11>h4{
+  font-weight: 100;
+}
+
+.right11>h1{
+  font-size: 2vw;
 }
