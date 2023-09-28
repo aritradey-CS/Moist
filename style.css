@@ -625,3 +625,11 @@ nav > img {
     font-size: 3vw; /* Adjusted font size for small screens */
   }
 }
+
+#page11{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  font-family:  "Raleway";
+}
