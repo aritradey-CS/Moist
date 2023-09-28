@@ -693,3 +693,10 @@ nav > img {
   background-color: rgb(37, 0, 72) ;
 }
 
+.page12-inner{
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  color: #ffffff;
+  font-family: "Raleway";
+}
