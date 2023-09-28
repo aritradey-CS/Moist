@@ -633,3 +633,21 @@ nav > img {
   background-color: #fff;
   font-family:  "Raleway";
 }
+
+#page11>h1{
+  position: relative;
+  top: 5%;
+  left: 10%;
+  font-size: 4vw;
+  color: black;
+  font-weight: 100;
+}
+
+.page11-inner{
+  top: 12%;
+  position: relative;
+  margin-bottom: 2vw;
+  height: 30%;
+  width: 100%;
+  background-color: #33ff00;
+}
