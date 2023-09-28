@@ -698,5 +698,14 @@ nav > img {
   top: 40%;
   right: 10%;
   color: #ffffff;
-  font-family: "Raleway";
+  /* font-family: "Raleway"; */
+}
+
+.page11-inner>h1{
+  font-size: 5vw;
+  font-weight: 100;
+}
+
+.page12-inner>p{
+  font-size: 1.3vw;
 }
