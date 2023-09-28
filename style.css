@@ -685,3 +685,11 @@ nav > img {
 .right11>h1{
   font-size: 2vw;
 }
+
+#page12{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(37, 0, 72) ;
+}
+
