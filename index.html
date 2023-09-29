@@ -31,10 +31,7 @@
   </head>
 
   <body>
-    <div id="scroll-indicator">
-      <div id="scroll-progress"></div>
-    </div>
-    
+  
 
     <div id="main">
       <div data-scroll data-scroll-speed="-5" id="page1">
@@ -239,13 +236,17 @@
 
         </div>
       </div>
+      
     </div>
 
 
 
 
 
-
+    <div id="scroll-indicator">
+      <div id="scroll-progress"></div>
+    </div>
+    
 
 
 
@@ -254,15 +255,16 @@
 
 
     <script>
-      window.addEventListener('scroll', () => {
-        const windowHeight = window.innerHeight;
-        const documentHeight = document.body.clientHeight;
-        const scrollTop = window.scrollY;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
-    
-        // Update the width of the progress bar
-        document.getElementById('scroll-progress').style.width = scrollPercent + '%';
-      });
+     window.addEventListener('scroll', () => {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.clientHeight;
+    const scrollTop = window.scrollY;
+    const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+    // Update the width of the progress bar
+    document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+});
+
     </script>
     
 
