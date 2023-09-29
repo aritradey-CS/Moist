@@ -735,12 +735,15 @@ nav > img {
   background-color: rgb(255, 255, 255);
   color: #000000;
   border-radius: 50px;
-  margin-top: 5vh;
+  margin-top: 8vh;
+  margin-left: 6vw;
+  transform: translate(-50%, -50%);
+  transition: all ease .5s;
 }
 
 #page13 button:hover {
-  background-color: blueviolet; 
-  color: brown; 
+  background-color: #0000ff ; 
+  color: #fff; 
 }
 
 
