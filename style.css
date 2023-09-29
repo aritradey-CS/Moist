@@ -378,17 +378,17 @@ nav > img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-  height: 30vw;
-  width: 30vw;
+  height: 20vw;
+  width: 20vw;
   border-radius: 50%;
   background-color: #ffffff69;
   border: 1px solid #ffffff;
 }
 .page7-cir-inner {
-  height: 70%;
-  width: 70%;
+  height: 80%;
+  width: 80%;
   border-radius: 50%;
-  background-color: rgb(173, 7, 7);
+  background-color:#8f37f3;
   border: 1px solid #ffffff;
   
   
@@ -402,8 +402,8 @@ nav > img {
   /* position: relative; */
   padding-left: 0%;
   padding-top: 0%;
-  margin-top: 22%;
-  margin-left: 23%;
+  margin-top: 12%;
+  margin-left: 12%;
 }
 
 
@@ -450,16 +450,16 @@ circle{
 
 svg{
     position: absolute;
-    top: 124px;
-    left: 118px;
+    top: 55px;
+    left: 55px;
 }
 
 
-@keyframes prog{
+/* @keyframes prog{
     100%{
         stroke-dashoffset: 165;
     }
-}
+} */
 
 
 @media screen and (max-width:768px) {
@@ -470,8 +470,8 @@ svg{
     /* position: relative; */
     padding-left: 0%;
       padding-top: 0%;
-      margin-top: -7%;
-      margin-left: -5%;
+      margin-top: -25%;
+      margin-left: -25%;
   }
   
   .outer {
@@ -508,7 +508,7 @@ svg{
   circle{
       fill: none;
       stroke: url(#GradientColor);
-      stroke-width: 20px;
+      stroke-width: 5px;
       stroke-dasharray: 472;
       stroke-dashoffset: 472;
   /* animation: prog 20s linear forwards; */
@@ -517,8 +517,8 @@ svg{
   
   svg{
       position: absolute;
-      top: 20px;
-      left: 23px;
+      top: -12px;
+      left: -13px;
   }
   
   
