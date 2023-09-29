@@ -699,14 +699,17 @@ nav > img {
   right: 10%;
   color: #ffffff;
   font-family: "Raleway";
+  
 }
 
 .page12-inner>h1{
   font-size: 5vw;
   font-weight: 100;
+  margin-left: -1%;
 }
 
 .page12-inner>p{
+  margin-top: 5%;
   font-size: 1.3vw;
 }
 
@@ -717,7 +720,7 @@ nav > img {
   background-color: black;
   color: #ffffff;
   font-family: "Raleway";
-  padding: 10vw 10vw;
+  padding: 8vw 10vw;
 }
 
 #page13>h1{
@@ -727,6 +730,10 @@ nav > img {
 }
 
 #page13>button{
-  padding: 10px 30px;
+  padding: 15px 30px;
   border: none;
+  background-color: blue;
+  color: #ffffff;
+  border-radius: 50px;
+  margin-top: 5vh;
 }
