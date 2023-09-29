@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Quicksand:wght@500;600&family=Raleway:wght@200;400;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Quicksand:wght@500;600&family=Raleway:wght@200;400;800;900&display=swap");
 
 * {
   margin: 0;
@@ -369,52 +368,6 @@ nav > img {
   /* border: #ffffff; */
 }
 
-
-
-
-
-
-
-
-
-#scroll-indicator {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px; /* Height of the progress bar */
-  background-color: #000000; /* Background color of the progress bar */
-  z-index: 1000; /* Make sure it appears above other content */
-}
-
-#scroll-progress {
-  height: 100%;
-  width: 0;
-  background-color: #00aaff; /* Color of the progress bar */
-  transition: width 0.2s; /* Add a smooth transition effect */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #page8 {
   position: relative;
   height: 100vh;
@@ -427,7 +380,6 @@ nav > img {
   width: 100%;
   object-fit: cover;
 }
-
 
 .page8-bottom {
   position: absolute;
@@ -526,7 +478,7 @@ nav > img {
   left: 5%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #page9 {
     display: flex;
     flex-direction: column; /* Ensure content stacks vertically on small screens */
@@ -534,108 +486,105 @@ nav > img {
     justify-content: center; /* Center content vertically */
     height: 100vh;
     width: 100vw;
-        background-color: black;
+    background-color: black;
   }
-  
+
   .left9 {
     width: 100%; /* Take up the full width on small screens */
     font-family: "Raleway";
     text-align: center; /* Center text on small screens */
     margin-bottom: 1%;
   }
-  
+
   .right9-center {
     width: 100%; /* Take up the full width on small screens */
     height: auto; /* Adjust height as needed */
     margin-top: 1rem; /* Add spacing between elements on small screens */
   }
-  
-  }
-  
-  .left9 {
-    height: 100%;
-    width: 100%;
-    /* background-color: red; */
-    position: relative;
-    font-family: "Raleway";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .right9 {
-    height: 100%;
-    width: 100%;
-    /* background-color: #8b2fc0; */
-    position: relative;
-  }
-  
+}
+
+.left9 {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+  font-family: "Raleway";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right9 {
+  height: 100%;
+  width: 100%;
+  /* background-color: #8b2fc0; */
+  position: relative;
+}
+
+.left9 > h1 {
+  position: absolute;
+  top: 35%;
+  right: 25%;
+  transform: translateY(-50%);
+  font-size: 5vw;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.right9-center {
+  height: 45%;
+  width: 105%;
+  background-color: #33ff00;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  left: -20%;
+}
+
+@media screen and (max-width: 768px) {
   .left9 > h1 {
     position: absolute;
-    top: 35%;
-    right: 25%;
+    top: 30%;
+    left: 25%;
     transform: translateY(-50%);
     font-size: 5vw;
     font-weight: 400;
     color: #ffffff;
     line-height: 1;
   }
-  
- 
-.right9-center {
-    height: 45%;
-    width: 105%;
+  .right9-center {
+    height: 55%;
+    width: 85%;
     background-color: #33ff00;
     border-radius: 10px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -10%;
+    transform: translateY(-80%);
     background-image: url(https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: cover;
-    left: -20%;
-}
-  
-
-  @media screen and (max-width:768px) {
-    .left9 > h1 {
-      position: absolute;
-      top: 30%;
-      left: 25%;
-      transform: translateY(-50%);
-      font-size: 5vw;
-      font-weight: 400;
-      color: #ffffff;
-      line-height: 1;
-    }
-    .right9-center {
-      height: 55%;
-      width: 85%;
-      background-color: #33ff00;
-      border-radius: 10px;
-      position: absolute;
-      top: -10%;
-      transform: translateY(-80%);
-      background-image: url(https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=600);
-      background-size: cover;
-      left: 7%;
-    }
+    left: 7%;
   }
+}
 
-#page10{
+#page10 {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-color: black;
 }
 
-.right10{
+.right10 {
   height: 100%;
   width: 60%;
   position: relative;
   left: 40%;
   /* background-color: magenta; */
 }
-.right10-inner{
+.right10-inner {
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -643,15 +592,14 @@ nav > img {
   width: 100%;
   color: #ffffff;
   /* background-color: #8b2fc0; */
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-.right10-inner>h1{
+.right10-inner > h1 {
   font-size: 2vw;
-  
 }
 
-.right10-inner>p{
+.right10-inner > p {
   margin-top: 1vw;
   font-size: 1.3vw;
   width: 90%;
@@ -664,7 +612,6 @@ nav > img {
   }
   .right10-inner > h1 {
     font-size: 3vw; /* Adjusted font size for small screens */
-    
   }
   .right10-inner > p {
     margin: 2vh 0vh;
@@ -672,7 +619,7 @@ nav > img {
   }
 }
 
-#page11{
+#page11 {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -680,7 +627,7 @@ nav > img {
   font-family: "Quicksand" "Raleway";
 }
 
-#page11>h1{
+#page11 > h1 {
   position: relative;
   top: 5%;
   left: 5%;
@@ -689,7 +636,7 @@ nav > img {
   font-weight: 100;
 }
 
-.page11-inner{
+.page11-inner {
   color: #ffffff;
   display: flex;
   top: 10%;
@@ -700,7 +647,7 @@ nav > img {
   /* background-color: #33ff00; */
 }
 
-.left11{
+.left11 {
   position: relative;
   height: 100%;
   width: 40%;
@@ -710,12 +657,12 @@ nav > img {
   overflow: hidden;
 }
 
-.left11>img{
+.left11 > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.right11{
+.right11 {
   padding: 2vw;
   left: 50%;
   position: absolute;
@@ -724,42 +671,41 @@ nav > img {
   /* background-color:chocolate; */
 }
 
-.right11>h4{
+.right11 > h4 {
   font-weight: 100;
 }
 
-.right11>h1{
+.right11 > h1 {
   font-size: 2vw;
 }
 
-#page12{
+#page12 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(37, 0, 72) ;
+  background-color: rgb(37, 0, 72);
 }
 
-.page12-inner{
+.page12-inner {
   position: absolute;
   top: 60%;
   right: 10%;
   color: #ffffff;
   font-family: "Raleway";
-  
 }
 
-.page12-inner>h1{
+.page12-inner > h1 {
   font-size: 5vw;
   font-weight: 100;
   margin-left: -1%;
 }
 
-.page12-inner>p{
+.page12-inner > p {
   margin-top: 5%;
   font-size: 1.3vw;
 }
 
-#page13{
+#page13 {
   position: relative;
   height: 50vh;
   width: 100%;
@@ -769,13 +715,13 @@ nav > img {
   padding: 8vw 10vw;
 }
 
-#page13>h1{
+#page13 > h1 {
   font-size: 5vw;
   line-height: 1;
   font-weight: 100;
 }
 
-#page13>button{
+#page13 > button {
   padding: 15px 30px;
   border: none;
   background-color: rgb(255, 255, 255);
@@ -784,24 +730,22 @@ nav > img {
   margin-top: 8vh;
   margin-left: 6vw;
   transform: translate(-50%, -50%);
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
 #page13 button:hover {
-  background-color: #0000ff ; 
-  color: #fff; 
+  background-color: #0000ff;
+  color: #fff;
 }
 
-
-
-#page14{
+#page14 {
   position: relative;
   height: 60vh;
   width: 100%;
   background-color: black;
 }
 
-.page14-inner{
+.page14-inner {
   position: relative;
   display: flex;
   align-items: center;
@@ -811,35 +755,35 @@ nav > img {
   height: 32%;
   width: 100%;
   color: #ffffff;
-  border-top: .5px solid #ffffff71;
-  border-bottom: .5px solid #ffffff4f;
+  border-top: 0.5px solid #ffffff71;
+  border-bottom: 0.5px solid #ffffff4f;
 }
 
-.page14-inner>i{
+.page14-inner > i {
   font-weight: 100;
   font-size: 2.2vw;
   position: relative;
   z-index: 9999;
 }
 
-.page14-inner>h1{
+.page14-inner > h1 {
   font-size: 3vw;
   font-weight: 100;
   position: relative;
   z-index: 9999;
 }
 
-.center14{
+.center14 {
   height: 0%;
   width: 100%;
-  background-color: #0000ff ;
+  background-color: #0000ff;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
-.page14-inner:hover .center14{
+.page14-inner:hover .center14 {
   height: 100%;
 }

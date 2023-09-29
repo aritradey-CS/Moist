@@ -39,6 +39,10 @@ function loco() {
 }
 
 loco();
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 var clutter = "";
 document
   .querySelector("#page2>h2")
@@ -608,12 +612,12 @@ function canvas2() {
       centerShift_y,
       img.width * ratio,
       img.height * ratio
-      );
-    }
-    // Scroll-triggered pinning
-    ScrollTrigger.create({
-      trigger: "#page7",
-      pin: true,
+    );
+  }
+  // Scroll-triggered pinning
+  ScrollTrigger.create({
+    trigger: "#page7",
+    pin: true,
     start: "top top",
     end: "200% top",
     scroller: "#main",
@@ -628,9 +632,9 @@ gsap.to(".page7-cir", {
     end: "bottom top",
     // markers: true,
     scroller: "#main",
-    scrub: .5,
+    scrub: 0.5,
   },
-  scale:1.5   
+  scale: 1.5,
   // opacity: 0, // Example: Animate opacity to 0
 });
 
@@ -641,25 +645,29 @@ gsap.to(".page7-cir-inner", {
     end: "bottom top",
     // markers: true,
     scroller: "#main",
-    scrub: .5,
+    scrub: 0.5,
   },
-  backgroundColor : `rgba(255, 255, 255, 0.226)`,
+  backgroundColor: `rgba(255, 255, 255, 0.226)`,
   // opacity: 0, // Example: Animate opacity to 0
 });
 
 
+
+
+gsap.registerPlugin(ScrollTrigger);
+
 var clutter = "";
 document
-  .querySelector("#page8>h3")
+  .querySelector("#page8>h1")
   .textContent.split(" ")
   .forEach(function (dets) {
     clutter += `<span> ${dets} </span>`;
-    document.querySelector("#page8>h3").innerHTML = clutter;
+    document.querySelector("#page8>h1").innerHTML = clutter;
   });
 
-gsap.to("#page8>h3>span", {
+gsap.to("#page8>h1>span", {
   ScrollTrigger: {
-    trigger: `#page8>h3`,
+    trigger: `#page8>h1`,
     start: `top bottom`,
     end: `bottom top`,
     scroller: `#main`,
@@ -668,4 +676,3 @@ gsap.to("#page8>h3>span", {
   stagger: 0.2,
   color: `white`,
 });
-

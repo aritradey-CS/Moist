@@ -13,7 +13,10 @@
     <link rel="icon" href="./assetes/tab-icon.png" type="image/tab-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Quicksand:wght@500;600&family=Raleway:wght@200;400;800;900&display=swap"
       rel="stylesheet"
@@ -31,8 +34,6 @@
   </head>
 
   <body>
-  
-
     <div id="main">
       <div data-scroll data-scroll-speed="-5" id="page1">
         <nav>
@@ -93,15 +94,7 @@
 
       <div id="page7">
         <div class="page7-cir">
-          <div class="page7-cir-inner">
-
-
-           
-
-
-
-
-          </div>
+          <div class="page7-cir-inner"></div>
         </div>
         <canvas></canvas>
         <div id="page7-exploreButton">▼ Scroll down to explore</div>
@@ -205,7 +198,8 @@
       <div id="page12">
         <div class="page12-inner">
           <h1>Proud Partnerships</h1>
-          <p>Our trusted collaborations with industry <br />leaders and
+          <p>
+            Our trusted collaborations with industry <br />leaders and
             distinguished legal professionals, <br />reinforcing our commitment
             to excellence.
           </p>
@@ -213,8 +207,8 @@
       </div>
       <div id="page13">
         <h1>FAQ Section</h1>
-        
-          <button>Newsletter Signup </button>
+
+        <button>Newsletter Signup</button>
       </div>
       <div id="page14">
         <div class="page14-inner">
@@ -227,52 +221,14 @@
           <h1>Instagram</h1>
           <i class="ri-links-line"></i>
           <div class="center14"></div>
-
         </div>
         <div class="page14-inner">
           <h1>LinkdIn</h1>
           <i class="ri-links-line"></i>
           <div class="center14"></div>
-
         </div>
       </div>
-      
     </div>
-
-
-
-
-
-    <div id="scroll-indicator">
-      <div id="scroll-progress"></div>
-    </div>
-    
-
-
-
-
-
-
-
-    <script>
-     window.addEventListener('scroll', () => {
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.body.clientHeight;
-    const scrollTop = window.scrollY;
-    const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
-
-    // Update the width of the progress bar
-    document.getElementById('scroll-progress').style.width = scrollPercent + '%';
-});
-
-    </script>
-    
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
