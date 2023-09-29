@@ -471,6 +471,34 @@ function canvas1() {
 }
 canvas1();
 
+
+let number = document.getElementById("number");
+let counter = 0;
+setInterval(() => {
+
+  if(counter == 65){
+    clearInterval();
+  }else{
+    counter += 1;
+    number.innerHTML = counter + "%"
+  }
+}, 30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var clutter = "";
 document
   .querySelector("#page6>h3")
