@@ -732,11 +732,18 @@ nav > img {
 #page13>button{
   padding: 15px 30px;
   border: none;
-  background-color: blue;
-  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
   border-radius: 50px;
   margin-top: 5vh;
 }
+
+#page13 button:hover {
+  background-color: blueviolet; 
+  color: brown; 
+}
+
+
 
 #page14{
   position: relative;
@@ -746,6 +753,7 @@ nav > img {
 }
 
 .page14-inner{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -754,16 +762,35 @@ nav > img {
   height: 32%;
   width: 100%;
   color: #ffffff;
-  border-top: .5px solid #fff;
-  border-bottom: .5px solid #fff;
+  border-top: .5px solid #ffffff71;
+  border-bottom: .5px solid #ffffff4f;
 }
 
 .page14-inner>i{
   font-weight: 100;
   font-size: 2.2vw;
+  position: relative;
+  z-index: 9999;
 }
 
 .page14-inner>h1{
   font-size: 3vw;
   font-weight: 100;
+  position: relative;
+  z-index: 9999;
+}
+
+.center14{
+  height: 0%;
+  width: 100%;
+  background-color: #0000ff ;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease .5s;
+}
+
+.page14-inner:hover .center14{
+  height: 100%;
 }
