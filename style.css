@@ -381,13 +381,14 @@ nav > img {
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
+  background-color: #ffffff69;
   border: 1px solid #ffffff;
 }
 .page7-cir-inner {
   height: 70%;
   width: 70%;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(173, 7, 7);
   border: 1px solid #ffffff;
   
   
@@ -443,7 +444,7 @@ circle{
     stroke-width: 10px;
     stroke-dasharray: 502.65;
     stroke-dashoffset: 472;
-animation: prog 2s linear forwards;
+/* animation: prog 2s linear forwards; */
 
 }
 
@@ -510,7 +511,7 @@ svg{
       stroke-width: 20px;
       stroke-dasharray: 472;
       stroke-dashoffset: 472;
-  animation: prog 2s linear forwards;
+  /* animation: prog 20s linear forwards; */
   
   }
   
@@ -521,11 +522,11 @@ svg{
   }
   
   
-  @keyframes prog{
+  /* @keyframes prog{
       100%{
           stroke-dashoffset: 165;
       }
-  }
+  } */
   
 }
 
