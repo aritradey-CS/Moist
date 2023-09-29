@@ -369,6 +369,52 @@ nav > img {
   /* border: #ffffff; */
 }
 
+
+
+
+
+
+
+
+
+#scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Height of the progress bar */
+  background-color: #ccc; /* Background color of the progress bar */
+  z-index: 1000; /* Make sure it appears above other content */
+}
+
+#scroll-progress {
+  height: 100%;
+  width: 0;
+  background-color: #00aaff; /* Color of the progress bar */
+  transition: width 0.2s; /* Add a smooth transition effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #page8 {
   position: relative;
   height: 100vh;

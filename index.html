@@ -31,6 +31,11 @@
   </head>
 
   <body>
+    <div id="scroll-indicator">
+      <div id="scroll-progress"></div>
+    </div>
+    
+
     <div id="main">
       <div data-scroll data-scroll-speed="-5" id="page1">
         <nav>
@@ -91,7 +96,15 @@
 
       <div id="page7">
         <div class="page7-cir">
-          <div class="page7-cir-inner"></div>
+          <div class="page7-cir-inner">
+
+
+           
+
+
+
+
+          </div>
         </div>
         <canvas></canvas>
         <div id="page7-exploreButton">▼ Scroll down to explore</div>
@@ -227,6 +240,37 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.body.clientHeight;
+        const scrollTop = window.scrollY;
+        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+    
+        // Update the width of the progress bar
+        document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+      });
+    </script>
+    
+
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
