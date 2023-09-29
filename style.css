@@ -744,3 +744,16 @@ nav > img {
   width: 100%;
   background-color: black;
 }
+
+.page14-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 5vw;
+  font-family: "Raleway";
+  height: 32%;
+  width: 100%;
+  color: #ffffff;
+  border-top: .5px solid #fff;
+  border-bottom: .5px solid #fff;
+}
