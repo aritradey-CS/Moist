@@ -272,30 +272,6 @@ nav > img {
   background-color: #8b2fc0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #page6 {
   justify-content: center;
   flex-direction: column;
@@ -388,11 +364,8 @@ nav > img {
   height: 80%;
   width: 80%;
   border-radius: 50%;
-  background-color:#8f37f3;
+  background-color: #8f37f3;
   border: 1px solid #ffffff;
-  
-  
-  
 }
 
 .skill {
@@ -405,7 +378,6 @@ nav > img {
   margin-top: 12%;
   margin-left: 12%;
 }
-
 
 .outer {
   height: 160px;
@@ -436,24 +408,20 @@ nav > img {
   color: #555;
 }
 
-
-
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 10px;
-    stroke-dasharray: 502.65;
-    stroke-dashoffset: 472;
-/* animation: prog 2s linear forwards; */
-
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray: 502.65;
+  stroke-dashoffset: 472;
+  /* animation: prog 2s linear forwards; */
 }
 
-svg{
-    position: absolute;
-    top: 55px;
-    left: 55px;
+svg {
+  position: absolute;
+  top: 55px;
+  left: 55px;
 }
-
 
 /* @keyframes prog{
     100%{
@@ -461,19 +429,18 @@ svg{
     }
 } */
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .skill {
     width: 160px;
     height: 160px;
     /* background-color: blueviolet; */
     /* position: relative; */
     padding-left: 0%;
-      padding-top: 0%;
-      margin-top: -25%;
-      margin-left: -25%;
+    padding-top: 0%;
+    margin-top: -35%;
+    margin-left: -35%;
   }
-  
+
   .outer {
     height: 160px;
     width: 160px;
@@ -483,7 +450,7 @@ svg{
     /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
       -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
   }
-  
+
   .inner {
     height: 120px;
     width: 120px;
@@ -497,47 +464,33 @@ svg{
       -0.5px -0.5px 0px rgba(255, 255, 255, 1),
       0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05); */
   }
-  
+
   #number {
     font-weight: 600;
     color: #555;
   }
-  
-  
-  
-  circle{
-      fill: none;
-      stroke: url(#GradientColor);
-      stroke-width: 5px;
-      stroke-dasharray: 472;
-      stroke-dashoffset: 472;
-  /* animation: prog 20s linear forwards; */
-  
+
+  circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    /* animation: prog 20s linear forwards; */
   }
-  
-  svg{
-      position: absolute;
-      top: -12px;
-      left: -13px;
+
+  svg {
+    position: absolute;
+    top: -20px;
+    left: -22px;
   }
-  
-  
+
   /* @keyframes prog{
       100%{
           stroke-dashoffset: 165;
       }
   } */
-  
 }
-
-
-
-
-
-
-
-
-
 
 #page8 {
   position: relative;

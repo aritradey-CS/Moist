@@ -509,20 +509,20 @@ ScrollTrigger.create({
   onUpdate: (self) => {
     // When scrolling, update the ScrollTrigger progress
     const scrollProgress = self.progress;
-    
+
     // Calculate the target count based on scroll progress
     const targetCount = Math.floor(scrollProgress * 65);
-    
+
     // Increment or decrement the current count accordingly
     if (targetCount > currentCount) {
       currentCount++;
     } else if (targetCount < currentCount) {
       currentCount--;
     }
-    
+
     // Update the count element
     updateCount(currentCount);
-    
+
     // Update the animation progress based on the scroll position
     animationTimeline.progress(scrollProgress);
   },
@@ -541,8 +541,6 @@ ScrollTrigger.create({
     animationTimeline.reverse(); // Reverse the animation when leaving the trigger area
   },
 });
-
-
 
 var clutter = "";
 document
