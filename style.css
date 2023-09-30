@@ -492,6 +492,90 @@ svg {
   } */
 }
 
+
+@media screen and (max-width: 844px) {
+  .skill {
+    width: 80px; /* Adjust the size to fit smaller screens */
+    height: 80px;
+    margin-top: 25%; /* Adjust margins for centering */
+    margin-left: 25%;
+  }
+
+  .outer {
+    height: 120px; /* Adjust outer circle size */
+    width: 120px;
+    padding: 10px; /* Adjust padding */
+  }
+
+  .inner {
+    height: 80px; /* Adjust inner circle size */
+    width: 80px;
+  }
+
+  #number {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  circle {
+    stroke-width: 10px; /* Adjust circle stroke width */
+    stroke-dasharray: 282; /* Adjust stroke-dasharray */
+    stroke-dashoffset: 282; /* Adjust stroke-dashoffset */
+  }
+
+  svg {
+    top: 38px; /* Adjust positioning */
+    left: 31px;
+  }
+
+  .page7-cir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    height: 60vw;
+    width: 60vw;
+    border-radius: 50%;
+    background-color: #ffffff69;
+    border: 1px solid #ffffff;
+  }
+  .page7-cir-inner {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #8f37f3;
+    border: 1px solid #ffffff;
+  }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #page8 {
   position: relative;
   height: 100vh;
