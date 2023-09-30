@@ -494,35 +494,35 @@ svg {
 
 @media screen and (max-width: 844px) {
   .skill {
-    width: 80px; /* Adjust the size to fit smaller screens */
+    width: 80px; 
     height: 80px;
-    margin-top: 25%; /* Adjust margins for centering */
+    margin-top: 25%; 
     margin-left: 25%;
   }
 
   .outer {
-    height: 120px; /* Adjust outer circle size */
+    height: 120px; 
     width: 120px;
-    padding: 10px; /* Adjust padding */
+    padding: 10px; 
   }
 
   .inner {
-    height: 80px; /* Adjust inner circle size */
+    height: 80px; 
     width: 80px;
   }
 
   #number {
-    font-size: 24px; /* Adjust font size */
+    font-size: 24px; 
   }
 
   circle {
-    stroke-width: 10px; /* Adjust circle stroke width */
-    stroke-dasharray: 282; /* Adjust stroke-dasharray */
-    stroke-dashoffset: 282; /* Adjust stroke-dashoffset */
+    stroke-width: 10px; 
+    stroke-dasharray: 282; 
+    stroke-dashoffset: 282; 
   }
 
   svg {
-    top: 38px; /* Adjust positioning */
+    top: 38px; 
     left: 31px;
   }
 
@@ -532,7 +532,7 @@ svg {
     justify-content: center;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 67%;
     transform: translate(-50%, -50%);
     z-index: 9;
     height: 60vw;
@@ -549,39 +549,38 @@ svg {
     border: 1px solid #ffffff;
   }
 }
-
-
+/* 
 @media screen and (max-width: 915px) {
   .skill {
-    width: 80px; /* Adjust the size to fit smaller screens */
+    width: 80px; 
     height: 80px;
-    margin-top: 32%; /* Adjust margins for centering */
+    margin-top: 32%; 
     margin-left: 33%;
   }
 
   .outer {
-    height: 120px; /* Adjust outer circle size */
+    height: 120px; 
     width: 120px;
-    padding: 10px; /* Adjust padding */
+    padding: 10px; 
   }
 
   .inner {
-    height: 80px; /* Adjust inner circle size */
+    height: 80px; 
     width: 80px;
   }
 
   #number {
-    font-size: 24px; /* Adjust font size */
+    font-size: 24px; 
   }
 
   circle {
-    stroke-width: 10px; /* Adjust circle stroke width */
-    stroke-dasharray: 282; /* Adjust stroke-dasharray */
-    stroke-dashoffset: 282; /* Adjust stroke-dashoffset */
+    stroke-width: 10px; 
+    stroke-dasharray: 282; 
+    stroke-dashoffset: 282; 
   }
 
   svg {
-    top: 100px; /* Adjust positioning */
+    top: 100px; 
     left: 100px;
   }
 
@@ -607,17 +606,7 @@ svg {
     background-color: #8f37f3;
     border: 1px solid #ffffff;
   }
-
-
-
-
-
-
-
-
-}
-
-
+} */
 
 #page8 {
   position: relative;
